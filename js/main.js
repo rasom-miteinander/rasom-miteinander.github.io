@@ -11,6 +11,13 @@
       "hero.tagline": "DU Verein Rasom‑Miteinander e.V. für Kultur, Soziales, Bildung und Entwicklung",
       "hero.desc": "Ansprechpartner für die ukrainische Gemeinschaft in Königs Wusterhausen, Zeuthen und umliegenden Gemeinden, Brandenburg, LDS.",
       "hero.cta": "Jetzt spenden",
+      "communityBanner.h2": "„Gemeinschaft entsteht dort, wo Menschen einander begegnen.“",
+      "communityBanner.p": "Zusammen für eine offene, starke und solidarische Gesellschaft.",
+      "events.h2": "Unsere Momente",
+      "events.sub": "Vergangene Veranstaltungen",
+      "events.link": "Galerie ansehen",
+      "events.card1.title": "Ukrainischer Unabhängigkeitstag",
+      "events.card1.desc": "Gemeinsam feierten wir den ukrainischen Unabhängigkeitstag – ein Fest der Freiheit, Kultur und Gemeinschaft.",
       "schwerpunkte.eyebrow": "Was wir tun",
       "schwerpunkte.h2": "Unsere Schwerpunkte",
       "card1.title": "Star Dance – Tanz & Kreativität",
@@ -51,6 +58,13 @@
       "hero.tagline": "Українсько-німецьке об'єднання Rasom-Miteinander e.V. з питань культури, соціальної підтримки, освіти та розвитку",
       "hero.desc": "Контактна опора для української громади в Кьонігс-Вустерхаузені, Цойтені та навколишніх громадах, Бранденбург, округ Даме-Шпревальд.",
       "hero.cta": "Підтримати зараз",
+      "communityBanner.h2": "«Спільнота народжується там, де люди зустрічають одне одного».",
+      "communityBanner.p": "Разом за відкрите, сильне та солідарне суспільство.",
+      "events.h2": "Наші моменти",
+      "events.sub": "Минулі заходи",
+      "events.link": "Переглянути галерею",
+      "events.card1.title": "День незалежності України",
+      "events.card1.desc": "Разом ми відсвяткували День незалежності України — свято свободи, культури та єдності.",
       "schwerpunkte.eyebrow": "Чим ми займаємось",
       "schwerpunkte.h2": "Наші напрямки",
       "card1.title": "Star Dance – танці та творчість",
@@ -102,5 +116,33 @@
     toggleBtn.addEventListener("click", function(){
       applyLang(current === "de" ? "uk" : "de");
     });
+  }
+
+  // events carousel
+  var eventsTrack = document.getElementById("events-track");
+  var eventsPrev = document.getElementById("events-prev");
+  var eventsNext = document.getElementById("events-next");
+  if (eventsTrack && eventsPrev && eventsNext){
+    function eventsStep(){
+      var card = eventsTrack.querySelector(".event-card");
+      if (!card) return eventsTrack.clientWidth;
+      var trackStyle = getComputedStyle(eventsTrack);
+      var gap = parseFloat(trackStyle.columnGap || trackStyle.gap || 0) || 0;
+      return card.getBoundingClientRect().width + gap;
+    }
+    function updateEventsNav(){
+      var max = eventsTrack.scrollWidth - eventsTrack.clientWidth;
+      eventsPrev.disabled = eventsTrack.scrollLeft <= 2;
+      eventsNext.disabled = eventsTrack.scrollLeft >= max - 2;
+    }
+    eventsPrev.addEventListener("click", function(){
+      eventsTrack.scrollBy({ left: -eventsStep(), behavior: "smooth" });
+    });
+    eventsNext.addEventListener("click", function(){
+      eventsTrack.scrollBy({ left: eventsStep(), behavior: "smooth" });
+    });
+    eventsTrack.addEventListener("scroll", updateEventsNav);
+    window.addEventListener("resize", updateEventsNav);
+    updateEventsNav();
   }
 })();
