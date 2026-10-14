@@ -1,0 +1,10 @@
+# Blocks direct web access to the rate-limit bookkeeping file. It holds
+# no personal data beyond short-lived, hashed IP addresses used only to
+# throttle abuse, but there is no reason for it to be reachable over the
+# web at all.
+Require all denied
+
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>

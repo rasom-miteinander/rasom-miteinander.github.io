@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mitglied werden – Rasom-Miteinander e.V.</title>
+<meta name="description" content="Werden Sie Mitglied im Deutsch-Ukrainischen Verein Rasom-Miteinander e.V. – Mitgliedsantrag online ausfüllen oder als PDF herunterladen.">
+<!-- TODO: canonical auf die Strato-Domain aktualisieren, sobald diese aktiv ist -->
+<link rel="canonical" href="https://rasom-miteinander.github.io/mitglied-werden/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <input type="checkbox" id="nav-toggle" class="menu-toggle">
+  <div class="nav-row">
+    <a class="brand" href="/" aria-label="Rasom-Miteinander e.V. – Startseite">
+      <img src="/images/logo.png" alt="Logo Deutsch-Ukrainischer Verein Rasom-Miteinander e.V.">
+      <span>
+        <span class="brand-name" style="display:block;">Rasom&#8209;Miteinander e.V.</span>
+        <span class="brand-sub">Deutsch&#8209;Ukrainischer Verein</span>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Hauptnavigation">
+      <a href="/#ueber-uns" data-i18n="nav.about">Über uns</a>
+      <a href="/#schwerpunkte" data-i18n="nav.schwerpunkte">Unsere Schwerpunkte</a>
+      <a href="/#" data-i18n="nav.projekte">Projekte</a>
+      <a href="/#" data-i18n="nav.kontakt">Kontakt</a>
+      <a href="/mitglied-werden/" class="nav-cta-mitglied" data-i18n="nav.mitglied">Mitglied werden</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="lang" id="lang-toggle" aria-label="Sprache wechseln: Deutsch / Українська">
+        <span id="lang-label">DE</span>
+        <svg width="11" height="7" viewBox="0 0 11 7" fill="none"><path d="M1 1L5.5 6L10 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="btn btn-primary" href="/#unterstuetzen" aria-label="Unterstützen">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.6-10-9.3C.3 8.6 1.6 4.9 5 4c2.2-.6 4.3.5 5.5 2.3C11.7 4.5 13.8 3.4 16 4c3.4.9 4.7 4.6 3 7.7C19.2 16.4 12 21 12 21z"/></svg>
+        <span class="btn-label" data-i18n="header.donate">Unterstützen</span>
+      </a>
+      <label class="hamburger" for="nav-toggle" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="mitglied-hero">
+    <div class="wrap">
+      <p class="eyebrow" data-i18n="mitglied.hero.eyebrow">Mitglied werden</p>
+      <h1 data-i18n="mitglied.hero.h1">Werden Sie Teil von Rasom&#8209;Miteinander e.V.</h1>
+      <p data-i18n="mitglied.hero.desc">Mit Ihrer Mitgliedschaft unterstützen Sie unsere Arbeit für Kultur, Bildung und Zusammenhalt. Sie können den Antrag bequem online ausfüllen oder als PDF herunterladen und per Post oder E&#8209;Mail einsenden.</p>
+    </div>
+  </section>
+
+  <section class="options-section">
+    <div class="wrap">
+      <h2 data-i18n="mitglied.options.h2">So können Sie Mitglied werden</h2>
+      <div class="options-grid">
+        <div class="option-card option-primary">
+          <span class="option-tag" data-i18n="mitglied.options.online.tag">Empfohlen</span>
+          <h3 data-i18n="mitglied.options.online.title">Online-Formular ausfüllen</h3>
+          <p data-i18n="mitglied.options.online.desc">Füllen Sie den Mitgliedsantrag direkt hier auf der Website aus. Wir erstellen daraus ein ausfüllbares PDF zum Ausdrucken und handschriftlichen Unterschreiben.</p>
+          <a href="#antragsformular" class="btn btn-primary">
+            <span class="btn-label" data-i18n="mitglied.options.online.cta">Formular öffnen</span>
+          </a>
+        </div>
+        <div class="option-card">
+          <h3 data-i18n="mitglied.options.pdf.title">Antrag als PDF herunterladen</h3>
+          <p data-i18n="mitglied.options.pdf.desc">Laden Sie den Mitgliedsantrag als PDF herunter, füllen Sie ihn handschriftlich aus und senden Sie ihn per Post oder E&#8209;Mail an uns.</p>
+          <a href="/documents/Mitgliedsantrag_Rasom-Miteinander.pdf" class="btn-ghost" download>
+            <span data-i18n="mitglied.options.pdf.cta">PDF herunterladen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mitglied-form-section" id="antragsformular">
+    <div class="wrap">
+      <div class="form-card">
+
+        <form id="mitglied-form" novalidate autocomplete="on">
+          <p class="required-note" data-i18n="mitglied.form.required-note">* Pflichtfelder</p>
+
+          <div id="form-fields">
+            <!-- 1. Angaben zur Person -->
+            <div class="form-section">
+              <h2 data-i18n="mitglied.step1.title">1. Angaben zur Person</h2>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="f-vorname" data-i18n="mitglied.step1.vorname">Vorname *</label>
+                  <input type="text" id="f-vorname" name="vorname" required autocomplete="given-name">
+                  <span class="field-error" data-error-for="f-vorname"></span>
+                </div>
+                <div class="field">
+                  <label for="f-nachname" data-i18n="mitglied.step1.nachname">Nachname *</label>
+                  <input type="text" id="f-nachname" name="nachname" required autocomplete="family-name">
+                  <span class="field-error" data-error-for="f-nachname"></span>
+                </div>
+                <div class="field">
+                  <label for="f-geburtsdatum" data-i18n="mitglied.step1.geburtsdatum">Geburtsdatum *</label>
+                  <input type="date" id="f-geburtsdatum" name="geburtsdatum" required autocomplete="bday">
+                  <span class="field-error" data-error-for="f-geburtsdatum"></span>
+                </div>
+                <div class="field full">
+                  <label for="f-strasse" data-i18n="mitglied.step1.strasse">Straße und Hausnummer *</label>
+                  <input type="text" id="f-strasse" name="strasse" required autocomplete="street-address">
+                  <span class="field-error" data-error-for="f-strasse"></span>
+                </div>
+                <div class="field">
+                  <label for="f-plz" data-i18n="mitglied.step1.plz">PLZ *</label>
+                  <input type="text" id="f-plz" name="plz" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code">
+                  <span class="field-error" data-error-for="f-plz"></span>
+                </div>
+                <div class="field">
+                  <label for="f-ort" data-i18n="mitglied.step1.ort">Ort *</label>
+                  <input type="text" id="f-ort" name="ort" required autocomplete="address-level2">
+                  <span class="field-error" data-error-for="f-ort"></span>
+                </div>
+                <div class="field">
+                  <label for="f-email" data-i18n="mitglied.step1.email">E&#8209;Mail *</label>
+                  <input type="email" id="f-email" name="email" required autocomplete="email">
+                  <span class="field-error" data-error-for="f-email"></span>
+                </div>
+                <div class="field">
+                  <label for="f-telefon"><span data-i18n="mitglied.step1.telefon">Telefon</span> <span class="opt" data-i18n="mitglied.step1.telefon-opt">(optional)</span></label>
+                  <input type="tel" id="f-telefon" name="telefon" autocomplete="tel">
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Art der Mitgliedschaft -->
+            <div class="form-section">
+              <h2 data-i18n="mitglied.step2.title">2. Art der Mitgliedschaft</h2>
+              <p class="section-desc" data-i18n="mitglied.step2.desc">Bitte wählen Sie die gewünschte Mitgliedschaftsart gemäß der Vereinssatzung.</p>
+              <div class="radio-group" data-group="mitgliedschaft">
+                <label class="radio-row">
+                  <input type="radio" name="mitgliedschaft" value="ordentlich" required>
+                  <span>
+                    <span data-i18n="mitglied.step2.ordentlich">Ordentliche Mitgliedschaft</span>
+                    <span class="radio-desc" data-i18n="mitglied.step2.ordentlich-desc">Gemäß § 4 der Satzung.</span>
+                  </span>
+                </label>
+                <label class="radio-row">
+                  <input type="radio" name="mitgliedschaft" value="foerder" required>
+                  <span>
+                    <span data-i18n="mitglied.step2.foerder">Fördermitgliedschaft</span>
+                    <span class="radio-desc" data-i18n="mitglied.step2.foerder-desc">Gemäß § 4A der Satzung.</span>
+                  </span>
+                </label>
+              </div>
+              <span class="field-error" data-error-for="mitgliedschaft"></span>
+            </div>
+
+            <!-- 3. Erklärung -->
+            <div class="form-section">
+              <h2 data-i18n="mitglied.step3.title">3. Erklärung</h2>
+              <label class="checkbox-row">
+                <input type="checkbox" id="f-satzung" name="erklaerung_satzung" required>
+                <span>
+                  <span data-i18n="mitglied.step3.pre">Ich unterstütze die Zwecke und Ziele des Vereins und erkenne die</span>
+                  <a href="/documents/Satzung_Rasom-Miteinander.pdf" target="_blank" rel="noopener" data-i18n="mitglied.step3.link">Satzung</a>
+                  <span data-i18n="mitglied.step3.post">in ihrer gültigen Fassung an. Mir ist bekannt, dass über die Aufnahme der Vorstand entscheidet. Ich nehme zur Kenntnis, dass Mitgliedsbeiträge gemäß § 5 der Satzung erhoben werden. *</span>
+                </span>
+              </label>
+              <span class="field-error" data-error-for="f-satzung"></span>
+            </div>
+
+            <!-- 4. Datenschutz -->
+            <div class="form-section">
+              <h2 data-i18n="mitglied.step4.title">4. Datenschutz</h2>
+              <label class="checkbox-row">
+                <input type="checkbox" id="f-datenschutz" name="einwilligung_datenschutz" required>
+                <span>
+                  <span data-i18n="mitglied.step4.pre">Ich willige in die Speicherung und Verarbeitung meiner personenbezogenen Daten zum Zwecke der Mitgliederverwaltung ein. Ich habe außerdem die</span>
+                  <a href="/datenschutz/" data-i18n="mitglied.step4.link">Datenschutzerklärung</a>
+                  <span data-i18n="mitglied.step4.post">der Website gelesen. *</span>
+                </span>
+              </label>
+              <span class="field-error" data-error-for="f-datenschutz"></span>
+            </div>
+
+            <!-- 5. Antrag abschließen -->
+            <div class="form-section">
+              <h2 data-i18n="mitglied.step5.title">5. Antrag abschließen</h2>
+              <p class="section-desc" data-i18n="mitglied.step5.desc">Unsere Satzung sieht für den Beitritt eine schriftliche Antragstellung vor. Aus Ihren Angaben erstellen wir deshalb ein ausfüllbares PDF, das Sie ausdrucken, handschriftlich unterschreiben und an uns senden.</p>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="f-sig-ort" data-i18n="mitglied.step5.ort">Ort *</label>
+                  <input type="text" id="f-sig-ort" name="unterschrift_ort" required>
+                  <span class="field-error" data-error-for="f-sig-ort"></span>
+                </div>
+                <div class="field">
+                  <label for="f-sig-datum" data-i18n="mitglied.step5.datum">Datum</label>
+                  <input type="text" id="f-sig-datum" name="unterschrift_datum" readonly>
+                </div>
+              </div>
+              <label class="checkbox-row">
+                <input type="checkbox" id="f-confirm" name="bestaetigung_korrekt" required>
+                <span data-i18n="mitglied.step5.confirm">Ich bestätige, dass alle Angaben in diesem Antrag wahrheitsgemäß und vollständig sind. *</span>
+              </label>
+              <span class="field-error" data-error-for="f-confirm"></span>
+            </div>
+          </div>
+
+          <div class="step-actions" id="actions-fill">
+            <button type="button" id="btn-to-review" class="btn btn-primary">
+              <span class="btn-label" data-i18n="mitglied.btn.review">Weiter zur Übersicht</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Übersicht / Review-Schritt -->
+        <div id="review-step" hidden>
+          <h2 data-i18n="mitglied.review.title">Übersicht Ihrer Angaben</h2>
+          <p class="section-desc" data-i18n="mitglied.review.desc">Bitte prüfen Sie Ihre Angaben, bevor Sie den Antrag verbindlich absenden.</p>
+
+          <div class="review-summary">
+            <div class="review-group">
+              <h3 data-i18n="mitglied.review.group1">Angaben zur Person</h3>
+              <dl>
+                <div class="review-row"><dt data-i18n="mitglied.review.vorname">Vorname</dt><dd id="rv-vorname"></dd></div>
+                <div class="review-row"><dt data-i18n="mitglied.review.nachname">Nachname</dt><dd id="rv-nachname"></dd></div>
+                <div class="review-row"><dt data-i18n="mitglied.review.geburtsdatum">Geburtsdatum</dt><dd id="rv-geburtsdatum"></dd></div>
+                <div class="review-row"><dt data-i18n="mitglied.review.adresse">Adresse</dt><dd id="rv-adresse"></dd></div>
+                <div class="review-row"><dt data-i18n="mitglied.review.email">E&#8209;Mail</dt><dd id="rv-email"></dd></div>
+                <div class="review-row"><dt data-i18n="mitglied.review.telefon">Telefon</dt><dd id="rv-telefon"></dd></div>
+              </dl>
+            </div>
+            <div class="review-group">
+              <h3 data-i18n="mitglied.review.group2">Art der Mitgliedschaft</h3>
+              <dl>
+                <div class="review-row"><dt>&nbsp;</dt><dd id="rv-mitgliedschaft"></dd></div>
+              </dl>
+            </div>
+            <div class="review-group">
+              <h3 data-i18n="mitglied.review.group3">Abschluss</h3>
+              <dl>
+                <div class="review-row"><dt data-i18n="mitglied.review.ort-datum">Ort, Datum</dt><dd id="rv-ort-datum"></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="step-actions">
+            <button type="button" id="btn-to-edit" class="btn-ghost">
+              <span data-i18n="mitglied.btn.edit">Angaben bearbeiten</span>
+            </button>
+            <button type="button" id="btn-submit" class="btn btn-primary">
+              <span class="btn-label" id="btn-submit-label" data-i18n="mitglied.btn.submit">PDF erstellen und herunterladen</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;width:100%;">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="">
+      <span data-i18n="footer.tagline">Rasom&#8209;Miteinander e.V. &middot; Königs Wusterhausen &amp; Zeuthen, Brandenburg</span>
+    </div>
+    <div class="footer-legal">
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+      <small data-i18n="footer.copy">&copy; 2026 Deutsch&#8209;Ukrainischer Verein Rasom&#8209;Miteinander e.V.</small>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/js/mitglied-werden.js"></script>
+</body>
+</html>

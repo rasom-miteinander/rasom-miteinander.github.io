@@ -1,0 +1,12 @@
+# Blocks direct web access to everything in this folder, including the
+# real mail-config.php (which contains the SMTP password). The backend
+# reads it with PHP's require(), which is unaffected by this rule —
+# only requests made directly through a browser/URL are blocked.
+Require all denied
+
+# Fallback for older Apache (2.2-style) configurations, in case the
+# directive above is not recognized by the STRATO server:
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>

@@ -1,0 +1,15 @@
+# Real SMTP credentials for the membership-form backend must never be
+# committed to this public repository. Only mail-config.example.php
+# (no real secrets) is tracked; the real file is created directly on
+# the STRATO server. See api/README-SETUP.md.
+api/config/mail-config.php
+
+# Rate-limit bookkeeping (no PII beyond a short-lived hashed IP) — local
+# server state, not something to version.
+api/storage/*.json
+
+# PHPMailer and FPDF are not vendored in this repo (no Composer on
+# STRATO Basic shared hosting) — they are downloaded directly onto the
+# server instead. See api/README-SETUP.md.
+api/lib/PHPMailer/
+api/lib/fpdf/
