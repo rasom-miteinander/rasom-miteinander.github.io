@@ -668,6 +668,27 @@
   .legal-page strong{color:var(--text);}
   .legal-placeholder{background:var(--accent-tint);color:var(--primary-dark);padding:1px 7px;border-radius:5px;font-weight:600;}
 
+  /* ---------- kontakt page ---------- */
+  .kontakt-page{padding:56px 0 110px;}
+  .kontakt-page .wrap{max-width:820px;}
+  .kontakt-page h1{font-size:clamp(2rem,4vw,2.6rem);margin-bottom:18px;}
+  .kontakt-list{display:flex;flex-direction:column;gap:30px;margin-top:40px;}
+  .kontakt-row{display:flex;align-items:flex-start;gap:16px;}
+  .kontakt-icon{width:22px;height:22px;flex:none;color:var(--primary);margin-top:3px;}
+  .kontakt-row strong{display:block;font-size:1.02rem;font-weight:700;margin-bottom:5px;}
+  .kontakt-row span,
+  .kontakt-row a{display:block;color:var(--text-muted);font-size:0.97rem;line-height:1.6;}
+  .kontakt-row a{color:var(--primary);text-decoration:none;}
+  .kontakt-row a:hover{text-decoration:underline;}
+  .kontakt-social{display:flex;gap:14px;margin-top:6px;}
+  .kontakt-social a{
+    width:40px;height:40px;border-radius:50%;
+    background:var(--primary);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    transition:background .15s ease;
+  }
+  .kontakt-social a:hover{background:var(--primary-dark);}
+
   /* ---------- mitglied werden (membership page) ---------- */
   .mitglied-hero{padding:56px 0 8px;}
   .mitglied-hero .wrap{max-width:820px;}
