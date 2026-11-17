@@ -656,14 +656,14 @@
   .kontakt-row a{display:block;color:var(--text-muted);font-size:0.97rem;line-height:1.6;}
   .kontakt-row a{color:var(--primary);text-decoration:none;}
   .kontakt-row a:hover{text-decoration:underline;}
-  .kontakt-social{display:flex;gap:14px;margin-top:6px;}
+  .kontakt-social{display:flex;gap:16px;margin-top:6px;}
   .kontakt-social a{
-    width:40px;height:40px;border-radius:50%;
-    background:var(--primary);color:#fff;
+    width:48px;height:48px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
-    transition:background .15s ease;
+    transition:transform .15s ease;
   }
-  .kontakt-social a:hover{background:var(--primary-dark);}
+  .kontakt-social a:hover{transform:scale(1.08);}
+  .kontakt-social img{width:100%;height:100%;border-radius:50%;display:block;}
 
   /* ---------- mitglied werden (membership page) ---------- */
   .mitglied-hero{padding:56px 0 8px;}
